@@ -1,0 +1,352 @@
+/* difault css */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.container{
+    width:1024px;
+    margin: auto;
+}
+ul{
+    margin-bottom: 0px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+/* Part of header */
+.header{
+    background: #000;
+}
+.header .logo{
+    width: 30%;
+    float: left;
+}
+.header .logo img{
+    width: 70px;
+    margin-top: 10px;
+}
+.header .menu{
+    width: 60%;
+    float: right;
+
+}
+.header .menu ul{
+    text-align: right;
+}
+.header .menu ul li{
+    display: inline-block;
+    padding: 15px 20px;
+    position:relative
+
+}
+.header .menu ul li a{
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    transition: .3s;
+    border-bottom: 2px solid transparent;
+     
+}
+.header .menu ul li:hover > a{
+    border-bottom: 2px solid #fff;
+}
+ 
+/* dropdown menu */
+.header .menu ul li ul{
+    position:absolute;
+    background:#000;
+    width: 180px;
+    text-align: center;
+    top: 130%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+.header .menu ul li ul li{
+    display: block;
+}
+.header .menu ul li ul li a{
+    
+}
+.header .menu ul li ul li:hover{
+    background: #fff;
+    margin-top: 3px;
+}
+.header .menu ul li ul li:hover a{
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+.header .menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+/* part of banner section */
+.banner-section{
+    background:url("https://i.ibb.co/wY3NTJs/banner.jpg") no-repeat top center;
+    background-size: cover;
+    padding: 160px 0px;
+}
+.banner-section h1{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.banner-section p{
+    font-weight: 600;
+    margin: 17px 0px;
+}
+.banner-section .text-1 .btn1{
+    background: #000;
+    color: #fff;
+    padding: 15px 45px;
+    display: inline-block;
+    border-radius: 10px;
+    transition: .7s;
+}
+.banner-section .text-1 .btn1:hover{
+    background-color:#fff;
+    color: #000;
+    border-radius: 10px;
+}
+.banner-section .text-1 .btn2{
+    background:#fff;
+    color: rgb(0, 0, 0);
+    padding: 15px 35px;
+    display: inline-block;
+    border-radius: 10px;
+    transition: .7s;
+}
+.banner-section .text-1 .btn2:hover{
+    background-color:rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+/* Part Of about section */
+.about-section{
+    background: rgb(135, 164, 113);
+    padding: 50px 0px;
+}
+.about-section .majkhane{
+    text-align: center;
+}
+.about-section .majkhane span{
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgb(235, 208, 194);
+    font-size: 30px;
+    color: #fff;
+    border-bottom: 2px solid rgb(227, 215, 209);
+    font-weight: 900;
+}
+.about-section .paragraph{
+    width: 50%;
+    float: left;
+    color: #fff;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.about-section .chobi{
+    width: 27%;
+    float: right;
+    margin-right: 50px;
+}
+/* part of who section */
+.who-section{
+    background: rgb(96, 106, 100);
+    padding: 60px 0px;
+}
+.who-section .text-2{
+    text-align: center;
+    color: #fff;
+    margin-top: -60px;
+    margin-top: -30px;
+}
+.who-section .text-2 span{
+    font-size: 30px;
+    font-weight: 900;
+    border-bottom: 2px solid rgb(227, 215, 209);
+    text-shadow: 1px 1px 2px rgb(235, 208, 194);
+}
+.who-section .text-2 b{
+    margin: 20px 0px;
+    display: inline-block;
+    font-size: 23px;
+}
+/* part of box */
+.who-section .box-1{
+    background-color: #fff;
+    width: 25%;
+    height: auto;
+    color: rgb(81, 106, 133);
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 50px;
+    float: left;
+    margin-left: 35px;
+}
+.who-section .box-1 .image{
+    float: left;
+    width: 13%;
+}
+.who-section .box-1 .passion{
+    float: right;
+    width: 80%;
+}
+.who-section .box-1 h3{
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.who-section .box-1 p{
+    line-height: 25px;
+}
+/* Part of cheekout section */
+.cheekout-section{
+    background: rgb(135, 164, 113);
+    padding: 60px 0px;
+}
+.cheekout-section .bio{
+    text-align: center;
+    color: #fff;
+    margin: 20px 0px;
+    margin-top: -20px;
+}
+.cheekout-section .bio h2{
+    margin-bottom: 10px;
+}
+.cheekout-section .card-1{
+    width: 40%;
+    float: left;
+    border: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+.cheekout-section .card-1 p{
+    color:#507d90;
+    margin-top: 15px;
+    font-weight: 600;
+}
+.cheekout-section .card-2{
+    width: 40%;
+    float: right;
+    border: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    margin-right: 90px;
+}
+.cheekout-section .card-2 p{
+    color:#507d90;
+    margin-top: 15px;
+    font-weight: 600;
+}
+.cheekout-section .gallary-2{
+    margin-left: 60px;
+    margin-top: 40px;
+}
+.cheekout-section .gallary-2 .img-1{
+    width: 20%;
+    float: left;
+    margin-left: 27px;
+}
+/* part of teem member section */
+.teem-member{
+    background: rgb(91, 151, 118);
+    padding: 40px 0px;
+    text-align: center;
+    margin-top: 0px;
+}
+.teem-member span{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 50px;
+    font-weight: 600;
+    position: relative;
+}
+.teem-member span::before {
+    content: "";
+    top: 105%;
+    background-color: rgb(255, 255, 255);
+    left: 32px;
+    position: absolute;
+    width: 240px;
+    height: 2px;
+}
+.teem-member .member-1{
+    width: 25%;
+    margin-left: 30px;
+    float: left;
+}
+.teem-member .icon ul{
+    text-align: center;
+}
+.teem-member .icon ul li{
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 23px;
+   
+}
+.teem-member .icon ul li a{
+    color: #fff;
+    transition: .7s;
+}
+.teem-member .icon ul li a:hover{
+    color:#4d7086;
+
+}
+.teem-member .memberss{
+    margin-left: 110px;
+}
+/* part of work section  */
+.work-section{
+    background:#606a64;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0px;
+}
+.work-section p{
+    margin: 10px auto;
+    width: 60%;
+}
+.work-section a{
+    display: inline-block;
+    background:#00bc9c;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    transition: .7s;
+}
+.work-section a:hover{
+    background:#4d7086 ;
+}
+/* part of fotter section */
+.fotter-section{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0px;
+}
+.fotter-section p{
+    line-height: 5px;
+    font-size: 18px;
+}
+/* <i class="fas fa-sort-down"></i>
+ */
